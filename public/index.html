@@ -6,8 +6,8 @@
   <link rel="stylesheet" href="css/tailwind.output.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <title>BOOGSRUDIO</title>
-  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+  <title>BOOGSTUDIO</title>
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet"> <!-- 确保链接正确 -->
   <style>
     /* 如果不使用外部 CSS 文件，可以在此處添加 light-theme 樣式 */
     .light-theme-header-footer {
@@ -34,7 +34,9 @@
       <li><a href="https://www.instagram.com/boogstudio_tw/" target="_blank"><span>最新消息</span></a></li>
     </ol>
     <div class="flex items-center justify-end ml-24 mr-5 mt-10 relative">
-      <button class="ml-10 border border-white bg-transparent px-2 py-1 rounded-md" onclick="toggleTheme()">D&N</button>
+      <button class="ml-10 border border-white bg-transparent px-2 py-1 rounded-md" onclick="toggleTheme()">
+        <i class="fas fa-sun"></i> <!-- 使用有效的图标名称 -->
+      </button>
       <div class="relative ml-10">
           <button class="border border-white bg-transparent px-2 py-1 rounded-md flex items-center" onclick="toggleDropdown(event)">
               Languages
