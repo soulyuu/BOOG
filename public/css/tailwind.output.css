@@ -2227,6 +2227,11 @@ video {
   background-color: #403d39;
 }
 
+.bg-jrblack {
+  --bg-opacity: 1;
+  background-color: #04080c;
+}
+
 .bg-cool-gray-50 {
   --bg-opacity: 1;
   background-color: #fbfdfe;
