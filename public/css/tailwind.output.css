@@ -15615,6 +15615,11 @@ video {
   color: rgba(99, 49, 18, var(--text-opacity));
 }
 
+.text-golden {
+  --border-opacity: 1;
+  color: #fff3b0;
+}
+
 .text-green-50 {
   --text-opacity: 1;
   color: #f3faf7;

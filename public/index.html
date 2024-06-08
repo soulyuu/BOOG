@@ -38,27 +38,32 @@
         <li class="hover-glow hover-up transition duration-300"><a href="https://www.youtube.com/@boogstudio_tw" target="_blank"><span>影像記錄</span></a></li>
         <li class="hover-glow hover-up transition duration-300"><a href="https://www.instagram.com/boogstudio_tw/" target="_blank"><span>最新消息</span></a></li>
     </ol>
-    <div class="flex space-x-10 mt-10">
-        <button class="border border-white bg-transparent px-3 py-2 rounded-md hover-up transition duration-300" onclick="toggleTheme()">
-            <i class="fas fa-sun"></i> 
-        </button>
-        <div class="relative ml-10">
-          <button class="border border-white bg-transparent px-2 py-2 rounded-md flex items-center hover-up transition duration-300" onclick="toggleDropdown(event)">
-                Languages
-                <i class="fa-solid fa-caret-down ml-1"></i>
-          </button>
-            <div id="languageDropdown" class="absolute hidden font-light bg-black border mt-2 w-30 rounded-md z-10">
-                <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-900">English(US)</a>
-                <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-900">English(UK)</a>
-                <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-900">日本語</a>
-                <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-900">繁體中文</a>
-            </div>
-        </div>
-        <button class="border border-white bg-transparent px-8 py-2 rounded-md hover-up transition duration-300">LOGIN</button>
+    <div class="flex items-center justify-end lg:hidden">
+      <button class="text-white focus:outline-none" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+      </button>
     </div>
-  </header>
+    <div id="menuItems" class="hidden lg:flex space-x-10 mt-10">
+      <button class="border border-white bg-transparent px-3 py-2 rounded-md hover-up transition duration-300" onclick="toggleTheme()">
+          <i class="fas fa-sun"></i> 
+      </button>
+      <div class="relative">
+          <button class="border border-white bg-transparent px-2 py-2 rounded-md flex items-center hover-up transition duration-300" onclick="toggleDropdown(event)">
+              Languages
+              <i class="fa-solid fa-caret-down ml-1"></i>
+          </button>
+          <div id="languageDropdown" class="absolute hidden font-light bg-black border mt-2 w-30 rounded-md z-10">
+              <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-900">English(US)</a>
+              <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-900">English(UK)</a>
+              <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-900">日本語</a>
+              <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-900">繁體中文</a>
+          </div>
+      </div>
+      <button class="border border-white bg-transparent px-8 py-2 rounded-md hover-up transition duration-300">LOGIN</button>
+    </div>
+ </header>
 
-<script>
+  <script>
     
     function handleDocumentClick(event) {
         var dropdown = document.getElementById("languageDropdown");
@@ -84,13 +89,18 @@
         document.getElementById('header').classList.toggle('light-theme-header-footer');
         document.getElementById('footer').classList.toggle('light-theme-header-footer');
     }
-</script>    
+
+    function toggleMenu() {
+        var menuItems = document.getElementById("menuItems");
+        menuItems.classList.toggle("hidden");
+    }
+  </script>      
   <main class="">
     <section class="relative">
       <div class="relative p-24 bg-cover bg-no-repeat grid grid-cols-1 lg:grid-cols-2 inset-0 bg-black bg-opacity-100" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/BG.jpg)">
         <div class="flex flex-col items-center justify-center leading-tight hidden lg:flex">      
             <p class="text-4xl mb-0 font-serif uppercase">Live a Wonderful Life through</p>
-            <p class="text-10xl font-bold uppercase">Dance!</p>
+            <p class="text-10xl font-bold uppercase">Dance<span class="text-golden">!</span></p>
         </div>
         <div class="flex items-center justify-center">
           <div class="top-0 right-0 bg-black pr-10 pl-5 pt-5 pb-10 w-9/12 max-w-screen-lg rounded-xl border-double border-4 border-golden">
