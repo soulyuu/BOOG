@@ -2,15 +2,16 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('./colors')
 
 module.exports = {
-  purge: ['./public/**/*.html'],
+  content: ['./src/**/*.{html,js}', './public/index.html'],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        'inter': ['Inter', 'sans-serif'],
+        'roboto': ['Roboto', 'sans-serif'],
       },
     },
-    colors,
   },
-  variants: {},
-  plugins: [require('@tailwindcss/custom-forms')],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
