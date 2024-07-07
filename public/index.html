@@ -8,33 +8,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <title>BOOGSTUDIO</title>
   <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <style>
-    .light-theme-header-footer {
-      background-color: #f6fff8;
-      color: #003049;
-    }
-
-    .light-theme-header-footer .border-white {
-      border-color: black;
-    }
-    .hover-glow:hover {
-            text-shadow: 0 0 10px currentColor;
-        }
-        .hover-up:hover {
-            transform: translateY(-10px);
-        }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-black text-white">
-  <header id="header" class="flex justify-between items-center pt-5 pl-10 pr-5">
+  <header id="header" class="flex justify-between items-center py-5 pl-10 pr-5">
     <div class="flex items-center">
       <img src="img/BOOG.png" alt="logo" class="w-24 object-contain" />
       <a href="#"><span class="text-2xl xl:text-6xl hidden xl:flex font-bold ml-2">BOOGSTUDIO</span></a>
     </div>  
     <ol class="text-l font-light flex space-x-16 items-end justify-center mt-10 hidden xl:flex">
-        <li class="hover-glow hover-up transition duration-300"><a href="https://www.instagram.com/boogstudio_tw/" target="_blank"><span>師資介紹</span></a></li>
+        <li class="hover-glow hover-up transition duration-300"><a href="師資介紹.html" target="_blank"><span>師資介紹</span></a></li>
         <li class="hover-glow hover-up transition duration-300"><a href="https://www.instagram.com/boogstudio_tw/" target="_blank"><span>風格介紹</span></a></li>
-        <li class="hover-glow hover-up transition duration-300"><a href="https://www.instagram.com/stories/highlights/18032884942851836/" target="_blank"><span>課程時間</span></a></li>
+        <li class="hover-glow hover-up transition duration-300"><a href="課程時間.html" target="_blank"><span>課程時間</span></a></li>
         <li class="hover-glow hover-up transition duration-300"><a href="https://www.youtube.com/@boogstudio_tw" target="_blank"><span>影像記錄</span></a></li>
         <li class="hover-glow hover-up transition duration-300"><a href="https://www.instagram.com/boogstudio_tw/" target="_blank"><span>最新消息</span></a></li>
     </ol>
@@ -61,40 +46,7 @@
       </div>
       <button class="border border-white bg-transparent px-8 py-2 rounded-md hover-up transition duration-300">LOGIN</button>
     </div>
- </header>
-
-  <script>
-    
-    function handleDocumentClick(event) {
-        var dropdown = document.getElementById("languageDropdown");
-        var target = event.target;
-
-        if (!dropdown.contains(target)) {
-            dropdown.classList.add("hidden");
-        }
-    }
-
-    
-    function toggleDropdown(event) {
-        event.stopPropagation(); 
-        var dropdown = document.getElementById("languageDropdown");
-        dropdown.classList.toggle("hidden");
-    }
-
-    
-    document.addEventListener("click", handleDocumentClick);
-
-    
-    function toggleTheme() {
-        document.getElementById('header').classList.toggle('light-theme-header-footer');
-        document.getElementById('footer').classList.toggle('light-theme-header-footer');
-    }
-
-    function toggleMenu() {
-        var menuItems = document.getElementById("menuItems");
-        menuItems.classList.toggle("hidden");
-    }
-  </script>      
+ </header>      
   <main class="">
     <section class="relative">
       <div class="relative p-24 bg-cover bg-no-repeat grid grid-cols-1 lg:grid-cols-2 inset-0 bg-black bg-opacity-100" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/BG.jpg)">
@@ -141,7 +93,7 @@
     </div>
     <section class="grid grid-cols-1 xl:grid-cols-3 gap-5">
       <div class="col-span-1 relative m-5 rounded-md">
-        <a href="https://www.instagram.com/boogstudio_tw/" target="_blank">
+        <a href="師資介紹.html" target="_blank">
             <div class="bg-gray-900 p-32 rounded-md relative overlay hover-glow hover-up transition duration-300">
                 <img src="img/teachers.jpeg" alt="teachers" class="absolute top-0 left-0 w-full h-full z-0 object-cover rounded-md" style="filter: brightness(30%);" />
                 <img src="img/BOOG.png" alt="logo" class="absolute top-0 left-0 m-3 w-12 z-10" />
@@ -165,7 +117,7 @@
         </a>
       </div>
       <div class="col-span-1 relative m-5 rounded-md">
-        <a href="https://www.instagram.com/stories/highlights/18032884942851836/" target="_blank">
+        <a href="課程時間.html" target="_blank">
           <div class="bg-gray-999 p-32 rounded-md relative hover-glow hover-up transition duration-300">
             <img src="img/SCHEDULE.jpg" alt="schedule" class="absolute top-0 left-0 w-full h-full z-0 object-cover rounded-md" style="filter: brightness(30%);" />
             <img src="img/BOOG.png" alt="logo" class="absolute top-0 left-0 m-3 w-12 z-10" />
@@ -220,24 +172,25 @@
       </div>
       <div>
         <div class="bg-orange-500 h-2 w-6 rounded-md mb-2"></div>
-        <a href="#"><span class="text-sm font-bold">COMPANY</span></a>
+        <span class="text-sm font-bold">COMPANY</span>
         <div class="flex flex-col space-y-2 mt-2">
-          <a href="#"><span>ABOUT US</span></a>
-          <a href="#"><span>CONTACT US</span></a>
-          <a href="#"><span>FAQ</span></a>
+          <a href="#"><span class="hover-glow">ABOUT US</span></a>
+          <a href="#"><span class="hover-glow">CONTACT US</span></a>
+          <a href="#"><span class="hover-glow">FAQ</span></a>
         </div>
       </div>
       <div>
         <div class="bg-orange-500 h-2 w-6 rounded-md mb-2"></div>
-        <a href="#"><span class="text-sm font-bold">LANGUAGES</span></a>
+        <span class="text-sm font-bold">LANGUAGES</span>
         <div class="flex flex-col space-y-2 mt-2">
-          <a href="#"><span>ENGLISH(US)</span></a>
-          <a href="#"><span>ENGLISH(UK)</span></a>
-          <a href="#"><span>日本語</span></a>
-          <a href="#"><span>繁體中文</span></a>
+          <a href="#"><span class="hover-glow">ENGLISH(US)</span></a>
+          <a href="#"><span class="hover-glow">ENGLISH(UK)</span></a>
+          <a href="#"><span class="hover-glow">日本語</span></a>
+          <a href="#"><span class="hover-glow">繁體中文</span></a>
         </div>
       </div>
     </div>
-  </footer>           
+  </footer>  
+  <script src="script.js"></script>         
 </body>
 </html>

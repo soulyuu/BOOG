@@ -2156,6 +2156,16 @@ video {
   background-color: rgba(255, 255, 255, var(--bg-opacity));
 }
 
+.bg-g {
+  --bg-opacity: 1;
+  background-color: #1d1b1b;
+}
+
+.bg-T {
+  --bg-opacity: 1;
+  background-color: #f6fff8;
+}
+
 .bg-black {
   --bg-opacity: 1;
   background-color: #000000;
@@ -7320,6 +7330,10 @@ video {
   height: 16rem;
 }
 
+.h-99 {
+  height: 32rem;
+}
+
 .h-auto {
   height: auto;
 }
@@ -8776,6 +8790,10 @@ video {
 
 .opacity-75 {
   opacity: 0.75;
+}
+
+.opacity-90 {
+  opacity: 0.9;
 }
 
 .opacity-100 {
